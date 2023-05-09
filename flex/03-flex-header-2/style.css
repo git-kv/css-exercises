@@ -4,6 +4,7 @@ you'll learn about it later. */
 
 body {
   margin: 0;
+  padding: 0;
   background: #eee;
   font-family: Besley, serif;
 }
@@ -12,6 +13,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -45,4 +50,19 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
+
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/*added align-items: center; to the header which did not need to be
+done for things to line up properly since it was only needed in the
+left/right containers*/
