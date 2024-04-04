@@ -3,8 +3,15 @@
   padding: 0;
 }
 
+ul { /* Mine */
+  list-style-type: none; /* Mine */
+} /* Mine */
+
 .container {
   text-align: center;
+  display: grid; /* Mine */
+  grid-template-columns: 1fr 4fr; /* Mine */
+  gap: 4px; /* Mine */
 }
 
 .container div {
@@ -17,6 +24,9 @@
 
 .header {
   background-color: #393f4d;
+  display: grid; /* Mine */
+  grid-template-columns: 1fr 1fr; /* Mine */
+  grid-column: 1 / 3; /* Mine */
 }
 
 .menu ul,
@@ -24,9 +34,24 @@
   font-size: 16px;
 }
 
+.menu ul { /* Mine */
+  display: grid; /* Mine */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Mine */
+} /* Mine */
+
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1 / span 1; /* Mine */
+  grid-row: 2 / 4; /* Mine */
+  display: grid; /* Mine */
+  gap: 50px; /* Mine */
 }
+
+.photo, /* Mine */
+.side-content { /* Mine */
+  display: grid; /* Mine */
+  align-items: center; /* Mine */
+} /* Mine */
 
 .sidebar .photo {
   background-color: white;
@@ -35,7 +60,6 @@
   font-weight: normal;
   border-radius: 10px;
 }
-
 
 .sidebar .side-content {
   background-color: white;
@@ -48,6 +72,11 @@
   background-color: #FF7755;
 }
 
+.nav ul { /* Mine */
+  display: grid; /* Mine */
+  grid-template-columns: 1fr 1fr 1fr; /* Mine */
+} /* Mine */
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
@@ -55,6 +84,10 @@
 
 .article {
   background-color: #bccbde;
+  grid-column: 2; /* Mine */
+  display: grid; /* Mine */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mine */
+  gap: 15px; /* Mine */
 }
 
 .article p {
@@ -70,6 +103,10 @@
   text-align: center;
 }
 
+.card { /* Mine */
+  height: 200px; /* Mine */
+} /* Mine */
+
 .card p {
   color: black;
   font-weight: normal;
@@ -83,9 +120,10 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / 3; /* Mine */
 }
 
 .footer p {
   font-size: 13px;
-  font-weight: normal;  
+  font-weight: normal;
 }
