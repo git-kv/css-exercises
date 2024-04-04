@@ -29,6 +29,10 @@ ul { /* Mine */
   grid-column: 1 / 3; /* Mine */
 }
 
+.logo { /* Mine */
+  text-align: left; /* Mine */
+} /* Mine */
+
 .menu ul,
 .menu li {
   font-size: 16px;

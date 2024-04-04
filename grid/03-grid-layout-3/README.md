@@ -35,4 +35,3 @@ If you use the tools in the Advanced Grid Properties lesson you should be able t
 - The nav and article elements only span across the second column
 
 ### ToDo
-- Alignment for header
